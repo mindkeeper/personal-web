@@ -5,8 +5,8 @@
   "scripts": {
     "tw:dev": "bunx  @tailwindcss/cli -i ./src/global.css -o ./dist/global.css --watch",
     "tw:build": "bunx @tailwindcss/cli -i ./src/global.css -o ./dist/global.css",
-    "dev": "concurrently \"bun run tw:dev\" \"bun build ./src/scripts/main.js --outdir ./dist --watch\" \"bun run server.js\"",
-    "build": "bun run tw:build && bun build ./src/scripts/main.js --outdir ./dist"
+    "dev": "concurrently \"bun run tw:dev\" \"bun build ./src/scripts/main.js --outdir ./dist --watch\" \"bun run index.html\"",
+    "build": "concurrently \"bun run tw:build\" \"bun build ./src/scripts/main.js --outdir ./dist\""
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
