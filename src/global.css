@@ -28,7 +28,7 @@
     @apply w-32 h-32 mb-4 transition duration-200 ease-in-out group-hover:scale-105;
   }
   .expertise-title {
-    @apply text-2xl font-bold text-center transition duration-200 ease-in-out group-hover:text-neutral-100;
+    @apply text-2xl font-bold text-center transition duration-200 ease-in-out;
   }
 }
 
