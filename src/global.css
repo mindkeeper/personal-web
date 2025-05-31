@@ -7,15 +7,28 @@
 }
 @layer components {
   .link {
-    @apply inline-flex items-center  hover:text-white text-brand-500 active:text-white transition duration-100;
+    @apply inline-flex items-center hover:text-neutral-100 text-brand-500 active:text-neutral-100 transition duration-100;
   }
 
   .link-divider {
-    @apply bg-brand-500 mx-4 -mt-px inline-block w-6 h-px group-hover:w-10 text-brand-500 group-hover:bg-white group-hover:text-white group-hover:h-1;
+    @apply bg-brand-500 mx-4 -mt-px inline-block w-6 h-px group-hover:w-10 text-brand-500 group-hover:bg-white group-hover:text-neutral-100 group-hover:h-1;
   }
 
   .project-card {
-    @apply my-2 transition bg-secondary md:group-hover:opacity-50 md:hover:!opacity-100 md:hover:scale-110;
+    @apply my-2 transition bg-secondary md:group-hover:opacity-50 md:hover:!opacity-100 md:hover:scale-105;
+  }
+
+  .expertise-card {
+    @apply flex-none w-full my-1 md:m-1 md:w-60 md:min-h-[240px] lg:w-80 lg:min-h-[320px] md:even:md:translate-y-5 text-brand-500 transition duration-200 ease-in-out;
+  }
+  .exprtise-content-container {
+    @apply bg-secondary flex flex-col justify-between items-center w-full h-full p-10 transition md:group-hover:opacity-50 md:hover:!opacity-100 md:hover:scale-105;
+  }
+  .expertise-logo {
+    @apply w-32 h-32 mb-4 transition duration-200 ease-in-out group-hover:scale-105;
+  }
+  .expertise-title {
+    @apply text-2xl font-bold text-center transition duration-200 ease-in-out group-hover:text-neutral-100;
   }
 }
 
