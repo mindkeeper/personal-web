@@ -17,12 +17,12 @@ export const creatProjectCard = (project) => {
     "text-[24px]",
     "font-semibold",
     "leading-tight",
-    "text-brand-500"
+    "text-primary"
   );
   title.textContent = project.name;
 
   const description = document.createElement("p");
-  description.classList.add("mt-2", "text-brand-500");
+  description.classList.add("mt-2", "text-primary");
   description.textContent = project.description || "No description available";
 
   const starGazerContainer = document.createElement("div");
@@ -30,7 +30,7 @@ export const creatProjectCard = (project) => {
     "flex",
     "items-center",
     "mt-4",
-    "text-brand-500"
+    "text-primary"
   );
   const starIconContainer = document.createElement("div");
   starIconContainer.classList.add("w-4", "h-4", "p-[2px]", "mr-1");
@@ -59,7 +59,7 @@ export const creatProjectCard = (project) => {
 
 export const createExpertiesCard = (experties) => {
   const cardContainer = document.getElementById("experties");
-  const card = document.createElement("article");
+  const card = document.createElement("div");
   card.classList.add("expertise-card");
   const contentContainer = document.createElement("div");
   contentContainer.classList.add("exprtise-content-container");
