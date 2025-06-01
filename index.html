@@ -3,27 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nur Cholis Majid - Frontend Engineer</title>
+    <meta name="title" content="Nur Cholis Majid - Software Engineer" />
+    <meta
+      name="description"
+      content="Software Engineer at Anggada Duta Wisesa. Experienced in React, Next.js, and modern web development."
+    />
+    <meta
+      name="keywords"
+      content="Software Engineer, Web Developer, React, Next.js, NestJS, JavaScript, TypeScript"
+    />
+    <meta name="author" content="Nur Cholis Majid" />
+
+    <!-- Stylesheet -->
     <link href="dist/global.css" rel="stylesheet" />
-    <title>Nur Cholis Majid</title>
   </head>
   <body>
     <div
       class="relative flex flex-col w-screen mx-auto text-base max-w-[1440px] md:flex-row'"
     >
+      <div class="md:hidden" id="mobile-header">
+        <div
+          class="fixed top-0 left-0 z-30 w-full h-20 bg-dusk translate-y-0 transition"
+        ></div>
+        <div
+          class="fixed top-0 left-0 z-50 w-full h-20 translate-y-0 transition"
+        >
+          <div
+            class="absolute top-0 w-full h-8 bg-gradient-to-b from-dusk to-transparent"
+          ></div>
+          <div
+            class="absolute bottom-0 w-full h-8 bg-gradient-to-t from-transparent to-dusk"
+          ></div>
+        </div>
+      </div>
       <header
         class="static flex flex-col justify-between w-full p-6 sm:p-8 md:max-w-[496px] md:fixed md:h-screen lg:py-[88px] lg:pl-[88px] md:pr-18 lg:pr-0"
       >
         <div>
           <h1
+            id=""
             class="text-2xl font-bold leading-tight lg:text-4xl lg:leading-none"
           >
             Nur Cholis Majid
           </h1>
-          <h2 class="mt-4 text-[22px] font-semibold leading-tight text-sunrise">
-            Software Engineer
-          </h2>
-          <div class="leading-loose">
-            <p>this is the description section</p>
+
+          <h2
+            id="jobs"
+            class="mt-4 text-[22px] font-semibold leading-tight min-h-[33px]"
+          ></h2>
+          <div class="leading-loose text-primary">
+            <p>
+              Currently working as Frontend Engineer at
+              <a
+                href="https://adw.co.id/"
+                target="_blank"
+                class="underline text-neutral-100"
+                >Anggada Duta Wisesa.</a
+              >
+            </p>
+            <p>
+              Passionate about web development and constantly exploring new
+              technologies to build better digital experiences. Always eager to
+              learn and experiment with the latest technologies
+            </p>
           </div>
         </div>
         <nav class="mt-[72px] hidden text-sm font-bold uppercase md:block">
@@ -110,13 +154,11 @@
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    class="lucide lucide-linkedin-icon lucide-linkedin"
+                    class="lucide lucide-twitter-icon lucide-twitter"
                   >
                     <path
-                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                      d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
                     />
-                    <rect width="4" height="12" x="2" y="9" />
-                    <circle cx="4" cy="4" r="2" />
                   </svg>
                 </div>
                 <span class="mt-px">Twitter</span>
@@ -148,11 +190,21 @@
       >
         <!-- Project Section -->
         <section class="md:pt-[88px] md:-mt-24">
+          <h2
+            class="md:hidden sticky top-0 z-40 pt-8 text-sm font-bold tracking-widest uppercase text-neutral-100"
+          >
+            Projcts
+          </h2>
           <div id="projects" class="pt-8 pb-10 -my-2 group md:py-0"></div>
         </section>
 
         <!-- Experties Section -->
         <section class="md:pt-[88px]">
+          <h2
+            class="md:hidden sticky top-0 z-40 pt-8 text-sm font-bold tracking-widest uppercase text-neutral-100"
+          >
+            Experties
+          </h2>
           <div
             id="experties"
             class="flex flex-wrap pt-8 pb-10 -my-1 md:-m-1 group md:py-0"
